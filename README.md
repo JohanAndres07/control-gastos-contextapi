@@ -1,54 +1,43 @@
-# React + TypeScript + Vite
+# 🚀 Control de Gastos - ContextAPI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al proyecto **Control de Gastos**, una aplicación web para gestionar tus finanzas personales. 🤑💰
 
-Currently, two official plugins are available:
+Este proyecto ha sido construido utilizando **React** con **Context API**, **useReducer**, **useContext**, y algunos otros hooks personalizados para el manejo eficiente del estado y la interacción del usuario. Además, hemos incorporado bibliotecas como **Motion** para animaciones fluidas y **Circular Progress Bar** para visualizar el progreso de tus metas de ahorro. 📊🔄
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Tecnologías y Herramientas Utilizadas
 
-## Expanding the ESLint configuration
+- **React**: Framework para construir interfaces de usuario interactivas. ⚛️
+- **Context API**: Gestión del estado global de la aplicación. 🌐
+- **useReducer**: Manejo avanzado del estado y lógica de las acciones. 🔄
+- **useContext**: Proporciona el acceso al estado global en cualquier componente. 📦
+- **Motion**: Animaciones y transiciones suaves. 💫
+- **React Circular Progress Bar**: Para visualizar los progresos de las metas de ahorro. 🎯
+- **Tailwind CSS**: Framework de CSS para un diseño rápido y personalizado. 🖌️
+- **Vite**: Herramienta de construcción para React, con tiempos de desarrollo rápidos. �
+- **gh-pages**: Despliegue en GitHub Pages. 🌍
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🧩 Características
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **Gestión de gastos**: Añadir, eliminar y visualizar tus gastos de manera sencilla. 💳
+- **Progreso de ahorro**: Ver tu progreso hacia metas de ahorro con una barra de progreso circular. 🏆
+- **Interfaz interactiva**: Animaciones y transiciones fluidas para mejorar la experiencia del usuario. 🎥
+- **Responsive**: Funciona en todos los dispositivos, desde tu móvil hasta tu computadora de escritorio. 📱💻
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🚀 ¿Cómo ejecutar el proyecto localmente?
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Sigue estos pasos para comenzar:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. **Clona el repositorio**:
+   ```bash
+   git clone https://github.com/JohanAndres07/control-gastos-contextapi.git
+   ```
+2. **Instala las dependencias**:
+  
+   ```bash
+   npm install
+   ```
+3. **Inicia el servidor de desarrollo**:
+  
+   ```bash
+   npm run dev
+   ```
