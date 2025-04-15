@@ -37,7 +37,7 @@ function App() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col  xl:flex-row items-center "
+          className="relative flex flex-col  xl:flex-row items-center  justify-center"
         >
 
           {isValidBudget ? <BudgetTracker /> : <BudgetForm />}
