@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
+  base: '/control-gastos-contextapi/', 
   plugins: [react(), tailwindcss()],
   build: {
     rollupOptions: {
@@ -15,7 +16,7 @@ export default defineConfig({
             if (id.includes('axios')) {
               return 'vendor-axios'
             }
-            return 'vendor' // todo lo demás de node_modules
+            return 'vendor'
           }
           if (id.includes('/src/hooks')) {
             return 'hooks'
@@ -26,6 +27,6 @@ export default defineConfig({
         }
       }
     },
-    chunkSizeWarningLimit: 700 
+    chunkSizeWarningLimit: 700
   }
 })
