@@ -25,7 +25,7 @@ export const BudgetForm = () => {
 
 	return (
 		<main
-		className="p-10 mt-10 w-[30rem] bg-white/50 rounded-2xl shadow-xl backdrop-blur-sm border border-white/30 xl:w-[40rem]">
+		className="p-10 mt-10 w-[20rem] xl:w[30rem] bg-white/50 rounded-2xl shadow-xl backdrop-blur-sm border border-white/30 xl:w-[40rem]">
 			<form className="space-y-5   " onSubmit={handleSubmit}>
 				<div className="flex flex-col space-y-5 ">
 					<label

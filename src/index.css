@@ -49,7 +49,7 @@ body {
   border-radius: 50px;
   background-color: rgb(93, 93, 180);
   z-index: -1;
-  animation: scaleEffect 2s infinite ease-in-out;
+  animation: scaleEffect 1s infinite ease-in-out;
 }
 
 @keyframes scaleEffect {

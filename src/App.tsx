@@ -23,7 +23,7 @@ function App() {
   return (
     <>
       <AuroraBackground className="min-h-screen overflow-x-hidden">
-        <header className="py-6 w-full text-center">
+        <header className="py-6 w-full text-center p-3">
           <h1 className="uppercase font-black text-3xl sm:text-5xl md:text-5xl text-zinc-600/30">
             Planificador de gastos
           </h1>
@@ -37,13 +37,13 @@ function App() {
             duration: 0.8,
             ease: "easeInOut",
           }}
-          className="relative flex flex-col  xl:flex-row items-center  justify-center"
+          className="relative flex flex-col  items-center  justify-center"
         >
 
           {isValidBudget ? <BudgetTracker /> : <BudgetForm />}
 
           {isValidBudget && (
-            <main className="w-full max-w-5xl mx-auto xl:w-[50rem] xl:h-[33rem] bg-white/20 shadow-xl rounded-2xl mt-10 p-6 sm:p-8 md:p-10 backdrop-blur-sm border border-white/20">
+            <main className="w-full max-w-5xl mx-auto xl:w-[50rem] bg-white/20 shadow-xl rounded-2xl mt-10 p-6 sm:p-8 md:p-10 backdrop-blur-sm border border-white/20 ">
               <FilterByCategory />
               <ExpenseList />
               <ExpenseModal />

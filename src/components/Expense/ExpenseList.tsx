@@ -14,8 +14,8 @@ export const ExpenseList = () => {
     return (
     <div
     className="mt-10">
-        {isEmpty ? <p className="text-gray-600 text-2xl font-bold">No hay gastos</p>:(<>
-        <p className="text-gray-600 text-2xl font-bold my-5">Lista de gastos</p>
+        {isEmpty ? <p className="text-gray-600 text-2xl font-bold ">No hay gastos</p>:(<>
+        <p className="text-gray-600 text-2xl font-bold my-5 h-auto">Lista de gastos</p>
          {filteredExpenses.map(expense => (
             <ExpenseDetails key={expense.id} 
             expense={expense} />))
