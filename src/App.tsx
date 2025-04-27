@@ -24,7 +24,7 @@ function App() {
     <>
       <AuroraBackground className="min-h-screen overflow-x-hidden">
         <header className="py-6 w-full text-center p-3">
-          <h1 className="uppercase font-black text-3xl sm:text-5xl md:text-5xl text-zinc-600/30">
+          <h1 className="uppercase font-black text-3xl sm:text-5xl md:text-5xl text-white" >
             Planificador de gastos
           </h1>
         </header>
